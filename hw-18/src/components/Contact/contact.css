@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+p {
+    text-align: center;
+    align-items: center;
+}
+
+.search {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.contact-post {
+    font-family: 'Hachi Maru Pop', cursive;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.contact {
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #87eb40;
+}
+
+.contact-info {
+    text-align: center;
+    width: 50%;
+}
+
+.contact-info div {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.gender {
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+}
+
+div {
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.post {
+    min-height: 310px;
+    padding: 0 10px;
+    background: #161a26;
+    margin-top: 20px;
+    width: 580px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.anakyn-Post {
+    color:white;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.author-Info {
+    display: table;
+    border-spacing: 7px 0px;
+    margin-left: 10%;
+}
+
+.pic {
+    margin-top: -1%;
+    float : left;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+}
+
+.post-Image {
+    display: table-cell;
+    height: 215px;
+    border-radius: 12px;
+    width: 80%;
+    margin-left: 11%;
+    justify-content: flex-end;
+}
+
+.name {
+    color: #ffffff;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.nickname,
+.data {
+    display: table-cell;
+    color: rgb(115, 133, 138);
+}
+
+.content {
+    margin-top: -2%;
+    margin-right: 20%;
+    color: #ffffff;
+    font-weight: 500;
+}

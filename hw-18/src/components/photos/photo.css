@@ -1,0 +1,10 @@
+
+.photo {
+    background-image: url(../photos/color-blind-red-green-1296x728-header.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+img {
+    padding: 20px;
+}
