@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './contact.css';
 
 function Contact({gender, firstName, lastName, phone}) {
 
-    let contactGender;
+    // let contactGender;
+    // if(gender === "male"){
+    //     contactGender = '\u2642';
+    // }else if (gender === "female"){
+    //     contactGender = '\u2640';
+    // }else{
+    //     contactGender = '\u00D7';
+    // }
+
+    const [genderIcon, setGenderIcon] = useState('');
+
+    useEffect(() => {
     if(gender === "male"){
-        contactGender = '\u2642';
+    setGenderIcon('\u2642');
     }else if (gender === "female"){
-        contactGender = '\u2640';
+    setGenderIcon('\u2640');
     }else{
-        contactGender = '\u00D7';
+    setGenderIcon('\u00D7');
     }
+    }, [gender])
 
     return(
         <div className="contact">
-            <span className="gender">{contactGender}</span>
+            <span className="gender">{genderIcon}</span>
             <div className="contact-info">
                 <p className="name">{firstName} {lastName}</p>
                 <p>{phone}</p>

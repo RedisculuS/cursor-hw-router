@@ -1,8 +1,7 @@
 import React from "react";
 import './main.css';
 
-const Main = () => {
-    return ( 
+const Main = () => (
     <div className="main">
         <h1>Hello, my friend)</h1>
         <p>
@@ -15,7 +14,6 @@ const Main = () => {
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQad38nq2H1JR7gIsEQ8CS8MqXoXI8VoGnBNQ&usqp=CAU" alt="leopard family"></img>
         </p>
     </div>
-    )
-}
+)
 
 export default Main;

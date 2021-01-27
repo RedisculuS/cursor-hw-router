@@ -45,16 +45,14 @@ class Contacts extends Component{
         const filteredContacts = contacts.filter(contact => (`${contact.firstName} ${contact.lastName}`).toLowerCase().includes(e.target.value.toLowerCase()) ||
         (contact.phone).includes(e.target.value)); //|| (contact.gender).includes(e.target.value);
 
-        this.setState({contacts: filteredContacts});
-        this.setState({search: e.target.value});
-
+        this.setState({contacts: filteredContacts, search: e.target.value});
     }
 
     render() {
         return(
             <div className="contact-post">
                 <div className="search">
-                    <input type="text" placeholder="Type contact you need" value={this.state.search} onChange={this.handleSearchChange}></input>
+                    <input type="text" placeholder="Type contact you need" value={this.state.search} onChange={this.handleSearchChange}/>
                 </div>
                 <p>{this.state.contacts.map((contact, i) => <Contact {...contact}/>)}</p>
                 {!this.state.contacts.length && (

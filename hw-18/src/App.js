@@ -1,11 +1,12 @@
-import './App.css';
 import React from "react";
-import Main from "./components/Main/Main";
-import Contacts from "./components/Contact/Contacts";
-import Posts from "./components/Post/Posts";
-import Photos from "./components/photos/Photo";
 import {BrowserRouter as Router, Route, Link, NavLink, Switch, Redirect} from 'react-router-dom';
 
+import Contacts from "./components/Contact/Contacts";
+import Main from "./components/Main/Main";
+import Photos from "./components/photos/Photo";
+import Posts from "./components/Post/Posts";
+
+import './App.css';
 
 const NotFound = () => {
   return (
@@ -17,26 +18,26 @@ function App() {
   return (
     <div className="App">
       <Router >
-        <NavLink className='app-link' 
+        <Link className='app-link' 
                  to="/main" 
                  activeClassName='active-link'>
             Main
-        </NavLink>
-        <NavLink className='app-link' 
+        </Link>
+        <Link className='app-link' 
                  to="/posts" 
                  activeClassName='active-link'>
             Posts
-        </NavLink>
-        <NavLink className='app-link' 
+        </Link>
+        <Link className='app-link' 
                  to="/photos" 
                  activeClassName='active-link'>
             Photos
-        </NavLink>
-        <NavLink className='app-link' 
+        </Link>
+        <Link className='app-link' 
                  to="/contacts" 
                  activeClassName='active-link'>
             Contacts
-        </NavLink>
+        </Link>
         <Switch>
           <Route path="/main" component={Main}/>
           <Route path="/posts" component={Posts}/>
